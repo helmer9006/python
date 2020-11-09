@@ -1,7 +1,7 @@
 print("Ejercicio de Amortización")
 deudaInicial = float(input("Ingrese el monto a prestar: "))
 periodos = int(input("Digite el tiempo del crédito: "))
-interes = 0.1   # Equivalente a 10%
+interes = 0.01   # Equivalente a 10%
 amortizacion = deudaInicial / periodos
 pago = 0
 intereses = 0
