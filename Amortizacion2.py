@@ -20,11 +20,12 @@ while deuda_final > 0:
     #    cuota = deuda_final - intereses
     cont = cont + 1
 
-    if deuda_final < cuota:
-        pago = deuda_final + intereses
+    if (cuota - intereses) > deuda_final:
+        pago = deuda_final - intereses
+        #print('es menor aqui')
     deudaInicial = deuda_final
     deuda_final = deuda_final + intereses - cuota
     totalPagado = totalPagado + pago
-# print("Periodo", cont, "Deuda Inicial $ {0:.2f}".format(deudaInicial), " La tasa es de $ {0:.2f}".format(interes), " Los intereses son $ {0:.2f}".format(
- #   intereses), "Pago es de $ {0:.2f}".format(pago), " El pago es de $ {0:.2f}".format(pago), " El saldo final es  {0:.2f}".format(deuda_final))
+    print("Periodo", cont, "Deuda Inicial $ {0:.2f}".format(deudaInicial), " La tasa es de $ {0:.2f}".format(interes), " Los intereses son $ {0:.2f}".format(
+    intereses), "El Pago es de $ {0:.2f}".format(pago), " El saldo final es  {0:.2f}".format(deuda_final))
 print("El total pagado fue $ {0:.2f}".format(totalPagado))
