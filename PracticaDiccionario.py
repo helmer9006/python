@@ -4,7 +4,7 @@ miDiccionario = {
 	"apellido":"Villarreal",
 	"edad":30,
 	"nacimiento": "08/06/1990",
-	"estado": "soltero"
+	"profesion": "Ingeniero de Sistemas"
 }
 miDiccionario['correo']="helmer@gmail.com" #añadir nuevo elemento al final del diccionario
 print(miDiccionario)#imprimiendo todo el diccionario
