@@ -21,3 +21,6 @@ diccionario = {
 # print(diccionario.values())
 #diccionario.pop('edad') eliminar item opcion 1
 #del diccionario['edad'] eliminar item opcion 2
+#añadir un valor
+diccionario['Hobby'] = 'Programación' # agregar elemento
+print(diccionario['Hobby']) #
